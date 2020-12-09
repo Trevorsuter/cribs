@@ -9,4 +9,8 @@ attr_reader :category
   def area
     @length * @width.to_i
   end
+
+  def is_painted?
+    false
+  end
 end
