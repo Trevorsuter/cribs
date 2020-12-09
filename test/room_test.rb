@@ -9,13 +9,13 @@ class RoomTest < Minitest::Test
   end
 
   def test_it_has_a_category
-    #skip
+    skip
     room = Room.new(:bedroom, 10, '13')
     assert_equal :bedroom, room.category
   end
 
   def test_it_can_get_area
-    #skip
+    skip
     room1 = Room.new(:bedroom, 10, '13')
     room2 = Room.new(:living_room, 15, '12')
     assert_equal 130, room1.area
@@ -23,13 +23,14 @@ class RoomTest < Minitest::Test
   end
 
   def test_is_painted?
+    skip
     room1 = Room.new(:bedroom, 10, '13')
     assert_equal false, room1.is_painted?
   end
 
   def test_paint
+    skip
     room1 = Room.new(:bedroom, 10, '13')
-    #require 'pry'; binding.pry
     room1.paint
     assert_equal room1.is_painted? == true, room1.painted
   end

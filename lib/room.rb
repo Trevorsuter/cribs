@@ -16,7 +16,7 @@ attr_reader :category, :painted
   end
 
   def paint
-    @painted == true
+    @painted = true
   end
 end
 #   def paint
